@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="Dégradé_sans_nom_3042" data-name="Dégradé sans nom 3042" x1="552" y1="450.1" x2="1417" y2="450.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="red"/>
+      <stop offset=".35" stop-color="red"/>
+      <stop offset=".48" stop-color="#000"/>
+      <stop offset=".66" stop-color="red"/>
+      <stop offset="1" stop-color="red"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_1036" data-name="Dégradé sans nom 1036" x1="983.5" y1="667.18" x2="983.5" y2="481.18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1" stop-color="red"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_2713" data-name="Dégradé sans nom 2713" x1="889" y1="201.5" x2="1631" y2="201.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="red"/>
+      <stop offset="1" stop-color="red"/>
+    </linearGradient>
+  </defs>
+  <polygon id="band4" points="1417 371.21 1417 529 552 529 552 373 1417 371.21" style="fill: url(#Dégradé_sans_nom_3042); stroke-width: 0px;"/>
+  <polygon id="band3" points="728.52 528.99 1076.55 1035.81 892.88 1050.78 892.65 1050.93 554.52 530 728.5 529 728.52 528.99" style="fill: #c12121; stroke-width: 0px;"/>
+  <g id="band2">
+    <polygon points="1075.5 283.51 1076.5 1037.5 892.5 1050.84 890.5 285.5 891 285.5 1075.5 283.51" style="fill: url(#Dégradé_sans_nom_1036); stroke-width: 0px;"/>
+    <g>
+      <polyline points="1076.5 1037.5 892.5 1050.84 892.28 1050.86" style="fill: none; stroke: #ff0006; stroke-miterlimit: 10;"/>
+      <polyline points="1076.5 1037.5 1075.5 283.51 1075.5 283" style="fill: none; stroke: #ff0006; stroke-miterlimit: 10;"/>
+      <polyline points="892.5 1051 892.5 1050.84 890.5 285.5 890.5 285" style="fill: none; stroke: #ff0006; stroke-miterlimit: 10;"/>
+      <polyline points="891 285.5 1075.5 283.51 1076 283.5" style="fill: none; stroke: #ff0006; stroke-miterlimit: 10;"/>
+    </g>
+  </g>
+  <polygon id="band1" points="1631 118 1631 285 890 285 889 118 1631 118" style="fill: url(#Dégradé_sans_nom_2713); stroke-width: 0px;"/>
+</svg>
