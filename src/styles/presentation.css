@@ -1,4 +1,18 @@
 .project {
     width: 100%;
-
 }
+
+.title-page-project {
+    position: fixed;
+    top: 10rem;
+}
+
+.project-div {
+    width: 80%;
+}
+
+.project-title {
+    color: #F00;
+    font-weight: bold;
+}
+

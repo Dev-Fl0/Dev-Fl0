@@ -15,6 +15,9 @@ module.exports = {
       backgroundColor: {
         main: "#282c34"
       },
+      colors: {
+        'app-red': '#F00',
+      },
     },
   },
   plugins: [],
