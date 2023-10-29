@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 
 
-export default function Contact() {
+export default function Contact2() {
 
     return (
-        <div className='navbar-icone faceDown flex gap-6 '>
+        <div className='navbar-icone flex gap-6 '>
             <a className='icone' href="mailto:florian.wauthier74@gmail.com" target="_blank" rel="noreferrer">
                 <img src="../src/assets/icons/email_logo1.png" alt="logo" className='img-logo'/>
             </a>
