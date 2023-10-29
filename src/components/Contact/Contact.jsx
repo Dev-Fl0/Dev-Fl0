@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import emailIcone from '../../../src/assets/icons/email_logo1.png';
-import linkedinIcone from '../../../assets/icons/linkedin_logo.png';
-import twitterIcone from '../../../assets/icons/twitter_logo.png';
+import linkedinIcone from '../../../src/assets/icons/linkedin_logo.png';
+import twitterIcone from '../../../src/assets/icons/twitter_logo.png';
 import phoneIcone from '../../../src/assets/icons/smartphone_logo_logo.png';
 
 export default function Contact() {
