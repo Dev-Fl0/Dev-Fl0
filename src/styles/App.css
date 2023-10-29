@@ -1,0 +1,289 @@
+
+#intro {
+  height:100vh;
+  width: 100%;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.welcome-container,
+.logo-container,
+.hero-container {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+
+.welcome-container {
+  z-index: 100;
+}
+
+.logo-container,
+.hero-container {
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.logo-container > svg {
+  width: 70vw;
+  opacity: 0;
+}
+
+
+.run .logo-container > svg {
+  opacity: 1;
+}
+
+.run .welcome-container {
+  opacity: 0;
+}
+
+.run .band1 {
+  animation: anim1 0.3s linear both;
+  animation-delay: 0.3s;
+}
+
+.run .band2 {
+  animation: anim2 0.4s linear both;
+  animation-delay: 0.5s;
+}
+
+.run .band3 {
+  animation: anim3 0.5s linear both;
+  animation-delay: 0.7s;
+}
+
+.run .band4 {
+  animation: anim4 0.6s linear both;
+  animation-delay: 0.9s;
+}
+
+
+@keyframes anim1 {
+  from {
+      clip-path: polygon(100% 100%,100% 100%, 100% 100%, 100% 100%);
+  }
+  to {
+      clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes anim2 {
+  from {
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes anim3 {
+  from {
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+  to {
+      clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+}
+
+@keyframes anim4 {
+  from {
+      clip-path: polygon(100% 100%, 100% 100%, 100% 0, 100% 0);
+  }
+  to {
+      clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+  }
+}
+
+.done .band1 {
+  animation-direction: reverse;
+  animation-delay: 2.3s;
+}
+
+
+.done .band2 {
+  animation-direction: reverse;
+  animation-delay: 2.2s;
+}
+
+
+.done .band3 {
+  animation-direction: reverse;
+  animation-delay: 2.1s;
+}
+
+
+.done .band4 {
+  animation-direction: reverse;
+  animation-delay: 2s;
+}
+
+
+
+@keyframes outAnim {
+  0% {
+      transform: translateZ(0);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      transform: translateZ(1000px) translateX(9%);
+      opacity: 0;
+  }
+}
+
+.run .logo-container > svg {
+  animation: outAnim 3s cubic-bezier(0.67, -0.04, 0.5, 0.68) forwards;
+  animation-delay: 0.3s;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar .img-logo {
+  height: 2rem;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.title {
+  color: white;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.faceDown {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  transition-delay: 2.5s;
+}
+
+.done .faceDown {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+@keyframes titleAnim {
+  from {
+      opacity: 0;
+      transform: translateZ(-1000px);
+  } to {
+      transform: translateZ(0px);
+  }
+}
+
+.done .faceDown {
+  animation: titleAnim 3s;
+  animation-delay: 0.3s;
+}
+
+
+/* Media queries */
+
+/* Pour les écrans de petite taille */
+@media (max-width: 640px) {
+  
+.done .faceDown {
+  animation: titleAnim 0.9s;
+  animation-delay: 0s;
+}
+  .welcome-container {
+    height:100vh;
+    width: 100%;
+  }
+  .hero-container {
+    height:100vh;
+    width: 100%;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+    margin-top: 0.3rem;
+  }
+  .link {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .img-logo {
+    text-align: center;
+    width: 3rem;
+  }
+}
+
+/* Pour les écrans de taille moyenne */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .done .faceDown {
+    animation: titleAnim 0.9s;
+    animation-delay: 0s;
+  }
+  .welcome-container {
+    height:100vh;
+    width: 100%;
+  }
+  .hero-container {
+    height:100vh;
+    width: 100%;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .link {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .img-logo {
+    text-align: center;
+    width: 3rem;
+  }
+}
+
+/* Pour les écrans larges */
+@media (min-width: 1025px) {
+  .welcome-container {
+    height:100vh;
+    width: 100%;
+  }
+  .hero-container {
+    height:100vh;
+    width: 100%;
+  }
+}
+
+.logo-done {
+  display: none;
+}
+
+.welcome-done {
+  display: none;
+}
+
