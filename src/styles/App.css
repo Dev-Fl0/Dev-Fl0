@@ -154,6 +154,15 @@
   padding: 1rem;
 }
 
+.navbar-icone {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+
 .navbar .img-logo {
   height: 2rem;
 }

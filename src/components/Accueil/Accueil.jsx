@@ -3,6 +3,7 @@ import React from 'react';
 // Component
 import ScrollButton from '../Button/ScrollButton';
 import Navbar2 from '../Navbar/Navbar2';
+import Contact2 from '../Contact/Contact2';
 
 export default function Accueil() {
 
@@ -14,6 +15,7 @@ export default function Accueil() {
             </div>
             <h1 className="title ">Bienvenue sur Dev-Fl0</h1>
             <ScrollButton />
+            <Contact2 />
         </div>
 
     );
