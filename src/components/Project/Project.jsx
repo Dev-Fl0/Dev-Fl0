@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar2 from '../Navbar/Navbar2';
 import Contact2 from '../Contact/Contact2';
 import ImmoPros from './ImmoPros';
-import Pokemon from './pokemon';
+
 
 
 
@@ -17,7 +17,6 @@ export default function Project() {
             <h1 className="title title-page-project">Projets</h1>
             <div className='project-div flex gap-6 justify-between'>    
                <ImmoPros />
-               <Pokemon />
             </div>
             <Contact2 />
         </div>
