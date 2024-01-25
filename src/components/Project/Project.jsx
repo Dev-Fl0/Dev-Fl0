@@ -6,12 +6,12 @@ import GitHubSearch from './GitHubSearch';
 
 export default function Project() {
   return (
-    <div className="accueil flex flex-col gap-1 justify-center items-center">
+    <div className="accueil project-div flex flex-col gap-1 justify-center items-center">
       <div className="accueil-navbar">
         <Navbar2 />
       </div>
       <h1 className="title title-page-project">Projets</h1>
-      <div className="project-div flex gap-6 justify-between">
+      <div className="project-div ">
         <ImmoPros />
         <GitHubSearch />
       </div>

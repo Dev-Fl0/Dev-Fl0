@@ -4,7 +4,7 @@ import projectImage from '../../assets/images/gitHubSearch.png';
 
 export default function GitHubSearch() {
   return (
-    <div className="flex flex-col w-9/12 gap-8 max-w-lg">
+    <div className="project-item flex flex-col w-9/12 gap-8 max-w-lg">
       <a
         href="https://dev-flo-github-recherche.netlify.app/"
         target="_blank"
